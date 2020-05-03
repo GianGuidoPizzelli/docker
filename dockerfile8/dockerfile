@@ -1,0 +1,5 @@
+FROM ubuntu
+RUN apt update
+RUN apt install -y iputils-ping
+ENTRYPOINT [ "ping","-c","5" ]
+CMD ["www.tim.it"]

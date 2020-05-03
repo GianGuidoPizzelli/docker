@@ -1,0 +1,4 @@
+FROM alpine
+WORKDIR /tmp
+RUN touch esempio.txt
+CMD [ "ls","/tmp" ]

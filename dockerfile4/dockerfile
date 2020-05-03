@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN apt update
+RUN apt install curl -y
+RUN touch ip.txt
+RUN curl ifconfig.me/ip -o ip.txt
+CMD [ "cat","ip.txt" ]

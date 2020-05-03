@@ -1,0 +1,3 @@
+FROM alpine
+Add https://github.com/GianGuidoPizzelli/docker/blob/master/docker.tar /tmp/
+CMD [ "ls","/tmp" ]

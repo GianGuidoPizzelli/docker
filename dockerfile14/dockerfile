@@ -1,0 +1,7 @@
+FROM alpine
+ARG nome_variabile
+# possiamo anche indicare un valore di default
+#ARG nome_variabile=default_value
+
+RUN echo "Ecco la mia varabile $nome_variabile"
+# anche con le graffe - ${nome_variabile}
