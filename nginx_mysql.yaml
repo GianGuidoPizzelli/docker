@@ -1,0 +1,17 @@
+version: '2'
+services:
+    web:
+        container_name: nginx_compose
+        image: nginx
+        ports: 
+            - "8080:80/tcp"
+    database:
+        container_name: mysql_compose
+        image: mysql
+        ports:
+            - "3306:3306"
+        environment: 
+            - MYSQL_ROOT_PASSWORD=example
+            - MYSQL_DATABASE=testdb
+            - MYSQL_USER=test
+            - MYSQL_PASSWORD=test
